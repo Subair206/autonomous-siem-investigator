@@ -37,6 +37,7 @@ A
  ┌───────────────────────────┐
  │ Agentic Intelligence Core │  (Generates automated IR markdown playbooks)
 
+
 ## 🧰 Tech Stack & Infrastructure
 
 SIEM Platform: Splunk Enterprise (Native ARM64 Daemon)
