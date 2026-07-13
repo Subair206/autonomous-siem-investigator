@@ -9,9 +9,22 @@ The Solution: An autonomous pipeline that detects threats at the ingestion layer
 
 ## 🏗️ System Architecture
 The pipeline decouples telemetry generation, security log storage, extraction middleware, and context-aware intelligence.
-A
+
+Key Skills Demonstrated: 
+
+Python automation
+Security operations workflows
+Splunk integration
+Incident response triage
+API integrations
+Security telemetry analysis
+Documentation automation
 
 ```text
+
+
+
+
 
 ```text
  ┌───────────────────────────┐
@@ -49,11 +62,3 @@ Data Serialization: Structured _json schemas
 ### 
 
 
-Key Skills Demonstrated
-Python automation
-Security operations workflows
-Splunk integration
-Incident response triage
-API integrations
-Security telemetry analysis
-Documentation automation
