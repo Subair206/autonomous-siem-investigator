@@ -104,3 +104,19 @@ The pipeline separates telemetry generation, log ingestion, data retrieval, and 
 - Standardize response workflows
 - Demonstrate security automation concepts
 - Explore practical applications of AI-assisted security operations
+
+## 📸 Demo
+
+### Architecture Overview
+
+The following diagram illustrates the end-to-end workflow from security event generation through automated triage and incident response playbook creation.
+
+![Architecture Diagram](architecture_diagram.png)
+
+---
+
+### Example Triage Output
+
+The system automatically generates structured incident response guidance from collected security telemetry.
+
+![Triage Output](triage_output.png)
