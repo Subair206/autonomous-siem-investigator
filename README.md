@@ -49,36 +49,7 @@ The Autonomous SIEM Investigator automates the collection and correlation of sec
 
 The pipeline separates telemetry generation, log ingestion, data retrieval, and automated investigation workflows.
 
-```text
- ┌───────────────────────────┐
- │   Python Attack Engine    │
- │ (Safely simulates threats)│
- └─────────────┬─────────────┘
-               │ HTTPS POST
-               ▼
- ┌───────────────────────────┐
- │ Splunk HEC Ingestion      │
- │ (Structured JSON Events)  │
- └─────────────┬─────────────┘
-               │
-               ▼
- ┌───────────────────────────┐
- │ Splunk Enterprise         │
- │ (Security Data Platform)  │
- └─────────────▲─────────────┘
-               │ Splunk SDK
-               ▼
- ┌───────────────────────────┐
- │ Python Triage Middleware  │
- │ (Search & Correlation)    │
- └─────────────┬─────────────┘
-               │
-               ▼
- ┌───────────────────────────┐
- │ Investigation Engine      │
- │ (Playbook Generation)     │
- └───────────────────────────┘
-```
+![Architecture Diagram](architecture_diagram.png)
 
 ---
 
@@ -119,17 +90,7 @@ The pipeline separates telemetry generation, log ingestion, data retrieval, and 
 
 ---
 
-## 📸 Demo
-
-### Architecture Overview
-
-The following diagram illustrates the end-to-end workflow from security event generation through automated triage and incident response playbook creation.
-
-![Architecture Diagram](architecture_diagram.png)
-
----
-
-### Example Triage Output
+## 📸 Example Output
 
 The system automatically generates structured incident response guidance based on collected security telemetry.
 
@@ -155,6 +116,7 @@ Building this project reinforced several important security engineering concepts
 - Support additional SIEM platforms
 - Containerize deployment with Docker
 - Build a lightweight analyst dashboard
+- Add automated severity scoring and prioritization
 
 ---
 
