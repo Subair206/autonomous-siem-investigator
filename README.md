@@ -1,6 +1,6 @@
 # 
 🚨 Autonomous SIEM Investigator
-An engineering proof-of-concept focused on automating high-velocity Tier-1 incident response triage. This project bridges the gap between structured SIEM logging engines and agentic AI architectures, converting raw infrastructure security alerts into contextualized, actionable incident response playbooks programmatically.
+An engineering proof-of-concept focused on automating high-velocity Tier-1 incident response triage. This project is a proof-of-concept that automates Tier-1 incident triage by collecting security telemetry from Splunk, enriching alert context, and generating structured incident response playbooks. The goal is to reduce manual investigation time and improve analyst efficiency.
 
 ## 🎯 The Problem Statement
 
