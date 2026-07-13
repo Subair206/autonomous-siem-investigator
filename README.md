@@ -102,8 +102,22 @@ The pipeline separates telemetry generation, log ingestion, data retrieval, and 
 - Improve analyst productivity
 - Accelerate incident investigations
 - Standardize response workflows
-- Demonstrate security automation concepts
+- Demonstrate practical security automation techniques
 - Explore practical applications of AI-assisted security operations
+
+---
+
+## 📂 Repository Structure
+
+| File | Purpose |
+|--------|---------|
+| `sim_attack.py` | Generates simulated security events for testing |
+| `ai_triage_agent.py` | Retrieves telemetry from Splunk and generates investigation guidance |
+| `architecture_diagram.png` | High-level system architecture |
+| `triage_output.png` | Sample incident response output |
+| `README.md` | Project documentation |
+
+---
 
 ## 📸 Demo
 
@@ -117,6 +131,39 @@ The following diagram illustrates the end-to-end workflow from security event ge
 
 ### Example Triage Output
 
-The system automatically generates structured incident response guidance from collected security telemetry.
+The system automatically generates structured incident response guidance based on collected security telemetry.
 
 ![Triage Output](triage_output.png)
+
+---
+
+## 📚 Lessons Learned
+
+Building this project reinforced several important security engineering concepts:
+
+- Automation should reduce analyst workload, not replace analyst judgment.
+- Security telemetry is only valuable when it is contextualized.
+- Clear documentation and repeatable workflows improve incident response consistency.
+- Effective security tooling should focus on reducing investigation friction.
+
+---
+
+## 🔮 Future Enhancements
+
+- Integrate AWS Security Hub findings
+- Add threat intelligence enrichment
+- Support additional SIEM platforms
+- Containerize deployment with Docker
+- Build a lightweight analyst dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Subair Dirie**
+
+Security Analyst | IAM | Security Operations | GRC Engineering
+
+GitHub: https://github.com/Subair206
+
+Focused on building practical security automation solutions that improve operational efficiency, strengthen security processes, and reduce manual effort.
