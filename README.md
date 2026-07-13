@@ -47,3 +47,13 @@ Integration Vector: Official Splunk SDK Developer Framework (splunklib)
 Data Serialization: Structured _json schemas
 
 ### 
+
+
+Key Skills Demonstrated
+Python automation
+Security operations workflows
+Splunk integration
+Incident response triage
+API integrations
+Security telemetry analysis
+Documentation automation
