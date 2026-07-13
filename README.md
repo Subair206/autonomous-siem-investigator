@@ -1,67 +1,106 @@
-# 
-🚨 Autonomous SIEM Investigator
-An engineering proof-of-concept focused on automating high-velocity Tier-1 incident response triage. This project is a proof-of-concept that automates Tier-1 incident triage by collecting security telemetry from Splunk, enriching alert context, and generating structured incident response playbooks. The goal is to reduce manual investigation time and improve analyst efficiency.
+# 🚨 Autonomous SIEM Investigator
 
-## 🎯 The Problem Statement
+An engineering proof-of-concept focused on automating high-velocity Tier-1 incident response triage.
 
-Modern Security Operations Centers (SOCs) are plagued by alert fatigue. Analysts spend crucial minutes manually pivoting across multiple dashboards—correlating cloud provider identity changes with container runtime logs—just to establish a baseline incident timeline.
-The Solution: An autonomous pipeline that detects threats at the ingestion layer, uses an orchestration fabric to query the SIEM via API, maps the telemetry against a security context engine, and instantly outputs formatted markdown incident triage playbooks. This drastically reduces Mean Time to Triage (MTTT) from minutes to milliseconds.
+This project automates Tier-1 incident triage by collecting security telemetry from Splunk, enriching alert context, and generating structured incident response playbooks. The goal is to reduce manual investigation time, improve analyst efficiency, and accelerate security response workflows.
+
+---
+
+## 🎯 The Problem
+
+Modern Security Operations Centers (SOCs) are often overwhelmed by alert fatigue. Analysts spend valuable time manually pivoting across multiple tools and dashboards to establish incident context before meaningful investigation can begin.
+
+For example, analysts may need to correlate:
+
+- Cloud identity changes
+- Authentication events
+- Container activity
+- Infrastructure logs
+- Security alerts
+
+This manual process increases Mean Time to Triage (MTTT) and reduces operational efficiency.
+
+### Solution
+
+The Autonomous SIEM Investigator automates the collection and correlation of security telemetry by:
+
+1. Ingesting structured security events into Splunk
+2. Querying relevant telemetry through the Splunk API
+3. Enriching alert context programmatically
+4. Generating structured incident response playbooks
+5. Presenting actionable investigation guidance to analysts
+
+---
+
+## 🛠️ Key Skills Demonstrated
+
+- Python Automation
+- Security Operations Workflows
+- Splunk Integration
+- Incident Response Triage
+- API Integrations
+- Security Telemetry Analysis
+- Documentation Automation
+- Security Engineering Fundamentals
+
+---
 
 ## 🏗️ System Architecture
-The pipeline decouples telemetry generation, security log storage, extraction middleware, and context-aware intelligence.
 
-Key Skills Demonstrated
-Python automation
-Security operations workflows
-Splunk integration
-Incident response triage
-API integrations
-Security telemetry analysis
-Documentation automation
-
-
-
-
-
-```text
-
-
-
-
+The pipeline separates telemetry generation, log ingestion, data retrieval, and automated investigation workflows.
 
 ```text
  ┌───────────────────────────┐
- │   Python Attack Engine    │  (Safely simulates cloud threats)
+ │   Python Attack Engine    │
+ │ (Safely simulates threats)│
  └─────────────┬─────────────┘
-               │ (HTTPS POST via Port 8088)
+               │ HTTPS POST
                ▼
  ┌───────────────────────────┐
- │ Splunk HEC Data Ingestion │  (Ingests structured JSON payloads)
+ │ Splunk HEC Ingestion      │
+ │ (Structured JSON Events)  │
  └─────────────┬─────────────┘
-               │ (Stores in custom 'mac_telemetry' index)
+               │
                ▼
  ┌───────────────────────────┐
- │ Splunk Enterprise Daemon  │  (Core SIEM Data Lake)
+ │ Splunk Enterprise         │
+ │ (Security Data Platform)  │
  └─────────────▲─────────────┘
-               │ (Programmatic authenticated SDK session via Port 8089)
+               │ Splunk SDK
                ▼
  ┌───────────────────────────┐
- │ Python Triage Middleware  │  (Executes blocking SPL queries)
+ │ Python Triage Middleware  │
+ │ (Search & Correlation)    │
  └─────────────┬─────────────┘
-               │ (Passes raw JSON string payloads)
+               │
                ▼
  ┌───────────────────────────┐
- │ Agentic Intelligence Core │  (Generates automated IR markdown playbooks)
+ │ Investigation Engine      │
+ │ (Playbook Generation)     │
+ └───────────────────────────┘
+```
 
+---
 
 ## 🧰 Tech Stack & Infrastructure
 
-SIEM Platform: Splunk Enterprise (Native ARM64 Daemon)
-Ingestion Gateway: Splunk HTTP Event Collector (HEC) over TLS 1.3
-Automation Fabric: Python 3.9+
-Integration Vector: Official Splunk SDK Developer Framework (splunklib)
-Data Serialization: Structured _json schemas
+| Component | Technology |
+|------------|------------|
+| SIEM Platform | Splunk Enterprise |
+| Data Ingestion | Splunk HTTP Event Collector (HEC) |
+| Programming Language | Python 3.9+ |
+| API Integration | Splunk SDK (splunklib) |
+| Data Format | Structured JSON |
+| Communication | HTTPS / TLS |
+| Security Focus | Incident Response & Security Operations |
 
-### 
+---
 
+## 🚀 Project Goals
 
+- Reduce manual Tier-1 triage effort
+- Improve analyst productivity
+- Accelerate incident investigations
+- Standardize response workflows
+- Demonstrate security automation concepts
+- Explore practical applications of AI-assisted security operations
